@@ -1,0 +1,10 @@
+body {
+  background-color: #444;
+}
+
+li {
+  background-image: linear-gradient(0, orange, rgb(255, 235, 199));
+  padding: 0 30px;
+  border-radius: 5px;
+  font-weight: bold;
+}

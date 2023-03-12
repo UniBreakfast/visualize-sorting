@@ -1,0 +1,11 @@
+ul {
+  --change-interval: 300ms;
+  position: relative;
+}
+
+li {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: var(--change-interval);
+}
