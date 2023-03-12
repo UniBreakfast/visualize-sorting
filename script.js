@@ -53,9 +53,9 @@ const tasks = [
   "макеты",
   "оформление",
   "архитектурное проектирование"
-]/* .slice(-10) */
+].slice(-20)
 
-const changeInterval = 100
+const changeInterval = 300
 
 const switchPlaces = showList(tasks, changeInterval)
 
