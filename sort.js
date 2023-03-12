@@ -3,11 +3,12 @@ function asyncGradualSort(arr, changeInterval) {
 
   setTimeout(async () => {
     let isSorted = false
+    let length = arr.length
 
     while (!isSorted) {
       isSorted = true
 
-      for (let i = 1; i < arr.length; i++) {
+      for (let i = 1; i < length; i++) {
         if (arr[i - 1] > arr[i]) {
           const temp = arr[i - 1]
 
@@ -25,6 +26,8 @@ function asyncGradualSort(arr, changeInterval) {
           await sleep(changeInterval)
         }
       }
+
+      length--
     }
   }, 100)
 
